@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LaLa-Cart</title>
+    <link rel="stylesheet" href="otp.css">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</head>
+<body>
+    <html>
+        <div class="navbar">
+            <div class="logo">
+              <a href="index.html"><img src="logo.png" alt="LaLa-Cart" width="125px" /></a>
+            </div>
+            <nav>
+              <ul class="pop">
+                <li><a class="pop" href="index.html">Home</a></li>
+                <li><a class="pop" href="product.html">Products</a></li>
+                <li><a class="pop" href="#">About</a></li>
+                <li><a class="pop" href="#">Contact</a></li>
+                <li><a class="pop" href="account.html">Account</a></li>
+              </ul>
+            </nav>
+            <a href="cart.html"><img src="cart.png" alt="" width="30px" height="30px" /></a>
+          </div>
+
+
+        <div class="container">
+          <div class="form">
+            <h1> OTP Varification </h1>
+            <input type="email" id="email" placeholder="Enter Email...">
+            <div class="otpverify">
+             <input type="text" id="otp_inp" placeholder="Enter the OTP sent to your Email...">
+             <button class="btn" id="otp_btn" id="verify"> Verify </button>
+             <button class="btn" onclick="sentOTP()">Send OTP</button>
+         </div>
+        </div>
+         <script src="otp.js"></script>
+         
+</body>
+</html>

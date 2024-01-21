@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LaLa-Cart</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="header">
+  <div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="logo.png" alt="LaLa-Cart" width="125px" /></a>
+          </div>
+          <nav>
+            <ul id="MenuItems">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="product.html">Products</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="account.html">Account</a></li>
+            </ul>
+          </nav>
+          <a href="cart.html"><img src="cart.png" alt="" width="30px" height="30px" /></a>
+          <img src="menu.png" alt="" class="menu-icon" onclick="menutoggle()" />
+        </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="small-container cart-page">
+  <table>
+    <tr>
+      <th>Product</th>
+      <th>Price</th>
+      <th>Image</th>
+      <th>Action</th> 
+    </tr>
+
+  
+    <tbody id="cart-items"></tbody>
+  </table>
+
+  <div class="total-price">
+    <table>
+      <tr>
+        <td>Total</td>
+        <td id="cart-total">₹0.00</td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<script src="cart.js"></script>
+
+  
+
+</body>
+</html>

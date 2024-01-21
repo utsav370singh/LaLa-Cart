@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>LaLa cart</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="header">
+  <div class="container">
+    <div class="navbar">
+      <div class="logo">
+        <a href="index.html"><img src="logo.png" alt="LaLa-Cart" width="125px" /></a>
+      </div>
+      <nav>
+        <ul id="MenuItems">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="product.html">Products</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="account.html">Account</a></li>
+        </ul>
+      </nav>
+      <a href="cart.html"><img src="cart.png" alt="" width="30px" height="30px" /></a>
+      <img src="menu.png" alt="" class="menu-icon" onclick="menutoggle()" />
+    </div>
+    <div class="row">
+      <div class="col-2">
+        <h1>
+          Give Your Workout <br />
+          A New Style!
+        </h1>
+        <p>
+          Success isn't always about greatness. It's about consistency.
+          Consistent <br />hard work gains success. Greatness will come.
+        </p>
+        <a href="#" target="_blank" rel="noopener noreferrer" class="btn">Explore Now &#8594;</a>
+      </div>
+      <div class="col-2">
+        <img src="1.png" alt="" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Featured categories -->
+<div class="categories">
+  <div class="small-container">
+    <div class="row">
+      <div class="col-4">
+        <img src="jeans2.png" alt="" />
+        <h2>Jeans</h2>
+      </div>
+      <div class="col-4">
+        <img src="shoes2.png" alt="" />
+        <h2>Shoes</h2>
+      </div>
+      <div class="col-4">
+        <img src="hoodie1.png" alt="" />
+        <h2>Hoodies</h2>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Featured products -->
+<div class="small-container">
+  <h2 class="title">Featured Products</h2>
+  <div class="row">
+    <div class="col-4">
+      <img src="Hoodie.png" alt="" />
+        <h4>Hoodie</h4>
+      </a>
+      <div class="rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+      </div>
+      <p>₹700.00</p>
+      <button class="btn1" onclick="addToCart(0)">Add to Cart</button>
+    </div>
+
+    <div class="col-4">
+      <img src="t-shirt.png" alt="" />
+      <h4>T-shirt</h4>
+      <div class="rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+        <i class="far fa-star"></i>
+      </div>
+      <p>₹500.00</p>
+      <button class="btn1" onclick="addToCart(1)">Add to Cart</button>
+    </div>
+
+    <div class="col-4">
+      <img src="shoes1.png" alt="" />
+      <h4>Shoes</h4>
+      <div class="rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+      </div>
+      <p>₹2000.00</p>
+      <button class="btn1" onclick="addToCart(2)">Add to Cart</button>
+    </div>
+
+    <div class="col-4">
+      <img src="top.png" alt="" />
+      <h4>Top</h4>
+      <div class="rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+        <i class="far fa-star"></i>
+        <i class="far fa-star"></i>
+      </div>
+      <p>₹800.00</p>
+      <button class="btn1" onclick="addToCart(3)">Add to Cart</button>
+    </div>
+  </div>
+  <h2 class="title">Latest Products</h2>
+  <div class="row">
+    <div class="col-4">
+      <img src="watch.png" alt="" />
+      <h4>Hand Watch</h4>
+      <div class="rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+      </div>
+      <p>₹900.00</p>
+      <button class="btn1" onclick="addToCart(4)">Add to Cart</button>
+    </div>
+
+    <div class="col-4">
+      <img src="shirt.png" alt="" />
+      <h4>T-Shirt</h4>
+      <div class="rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+        <i class="far fa-star"></i>
+      </div>
+      <p>₹500.00</p>
+      <button class="btn1" onclick="addToCart(5)">Add to Cart</button>
+    </div>
+
+    <div class="col-4">
+      <img src="shirt2.png" alt="" />
+      <h4>Shirt</h4>
+      <div class="rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+      </div>
+      <p>₹600.00</p>
+      <button class="btn1" onclick="addToCart(6)">Add to Cart</button>
+    </div>
+
+    <div class="col-4">
+      <img src="jeans.png" alt="" />
+      <h4>Jeans</h4>
+      <div class="rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+        <i class="far fa-star"></i>
+        <i class="far fa-star"></i>
+      </div>
+      <p>₹900.00</p>
+      <button class="btn1" onclick="addToCart(7)">Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-4">
+      <img src="jeans1.png" alt="" />
+      <h4>Jeans</h4>
+      <div class="rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+      </div>
+      <p>₹950.00</p>
+      <button class="btn1" onclick="addToCart(8)">Add to Cart</button>
+    </div>
+
+    <div class="col-4">
+      <img src="dress.png" alt="" />
+      <h4>1-piece</h4>
+      <div class="rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+        <i class="far fa-star"></i>
+      </div>
+      <p>₹1100.00</p>
+      <button class="btn1" onclick="addToCart(9)">Add to Cart</button>
+    </div>
+
+    <div class="col-4">
+      <img src="shirt1.png" alt="" />
+      <h4>Shirt</h4>
+      <div class="rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+      </div>
+      <p>₹500.00</p>
+      <button class="btn1" onclick="addToCart(10)">Add to Cart</button>
+    </div>
+
+    <div class="col-4">
+      <img src="watches1.png" alt="" />
+      <h4>Hand Watch</h4>
+      <div class="rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+        <i class="far fa-star"></i>
+        <i class="far fa-star"></i>
+      </div>
+      <p>₹600.00</p>
+      <button class="btn1" onclick="addToCart(11)">Add to Cart</button>
+    </div>
+  </div>
+</div>
+<!-- offer -->
+<div class="offer">
+  <div class="small-container">
+    <div class="row">
+      <div class="col-6">
+        <img src="pic.png" alt="" class="offer-img" />
+      </div>
+      <div class="col-6">
+        <p>Exclusively Available on LaLa-Cart</p>
+        <h1>Fire-Boltt Dream Android Smartwatch</h1>
+        <small>The Fire-Boltt Dream Android Smartwatch has arrived, boasting cutting-edge features that redefine convenience and connectivity.
+
+          Picture this: A sleek, futuristic design adorning your wrist, but that's just the beginning.
+          
+          What sets the Fire-Boltt Dream apart? Let's dive into the sheer awesomeness of this game-changing gadget.</small>
+        <br />
+        <a href="https://www.fireboltt.com/blogs/news/fire-boltt-dream-android-smartwatch-out-now-your-first-wristphone" class="btn">Buy Now &#8594;</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Testimonial -->
+<div class="testimonial">
+  <div class="small-container">
+    <div class="row">
+      <div class="col-3">
+        <i class="fas fa-quote-left"></i>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Perferendis, quae molestias error id est voluptatibus quos amet
+          numquam aspernatur nam cumque ullam? Veritatis eveniet et, maxime
+          eaque soluta quas modi.
+        </p>
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <img src="utsav.png" alt="" />
+        <h3>Utsav Singh</h3>
+      </div>
+
+      <div class="col-3">
+        <i class="fas fa-quote-left"></i>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Perferendis, quae molestias error id est voluptatibus quos amet
+          numquam aspernatur nam cumque ullam? Veritatis eveniet et, maxime
+          eaque soluta quas modi.
+        </p>
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <img src="sachin.png" alt="" />
+        <h3>Sachin</h3>
+      </div>
+
+      <div class="col-3">
+        <i class="fas fa-quote-left"></i>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Perferendis, quae molestias error id est voluptatibus quos amet
+          numquam aspernatur nam cumque ullam? Veritatis eveniet et, maxime
+          eaque soluta quas modi.
+        </p>
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <img src="rohit.png" alt="" />
+        <h3>Rohit Sharma</h3>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- brands -->
+
+<div class="brands">
+  <div class="small-container">
+    <marquee behavior="scroll" direction="fa-quote-left" >
+    <div class="row"; display:inline table>
+      <div class="col-5">
+        <img src="https://i.ibb.co/Gfwzz1S/logo-godrej.png" alt="" />
+      </div>
+
+      <div class="col-5">
+        <img src="https://i.ibb.co/vjrRZFM/logo-oppo.png" alt="" />
+      </div>
+
+      <div class="col-5">
+        <img src="https://i.ibb.co/3zs234S/logo-coca-cola.png" alt="" />
+      </div>
+
+      <div class="col-5">
+        <img src="https://i.ibb.co/7Wt343W/logo-paypal.png" alt="" />
+      </div>
+
+      <div class="col-5">
+        <img src="https://i.ibb.co/GVSNwJD/logo-philips.png" alt="" />
+      </div>
+    </marquee>
+    </div>
+  </div>
+</div>
+<!-- Footer -->
+<div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="footer-col-1">
+        <h3>Download Our App</h3>
+        <p>Download App for Android and iso mobile phone.</p>
+        <div class="app-logo">
+          <img src="https://i.ibb.co/KbPTYYQ/play-store.png" alt="" />
+          <img src="https://i.ibb.co/hVM4X2p/app-store.png" alt="" />
+        </div>
+      </div>
+
+      <div class="footer-col-2">
+        <img src="logo.png" alt="" />
+        <p>
+          Our Purpose Is To Sustainably Make the Pleasure and Benefits of
+          Sports Accessible to the Many.
+        </p>
+      </div>
+
+      <div class="footer-col-3">
+        <h3>Useful Links</h3>
+        <ul>
+          <li>Coupons</li>
+          <li>Blog Post</li>
+          <li>Return Policy</li>
+          <li>Join Affiliate</li>
+        </ul>
+      </div>
+
+      <div class="footer-col-4">
+        <h3>Follow us</h3>
+        <ul>
+          <li>Facebook</li>
+          <li>Twitter</li>
+          <li>Instagram</li>
+          <li>YouTube</li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <p class="copyright">Copyright &copy; 2024 - LaLa-Cart</p>
+  </div>
+</div>
+
+
+<script src="scripts.js"></script>
+
+  
+</body>
+</html>
